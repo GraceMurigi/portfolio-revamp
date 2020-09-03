@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Skills from '../views/Skills.vue'
+import Projects from '../views/Projects.vue'
+// projects codepen github skills
 
 Vue.use(VueRouter)
 
@@ -9,6 +12,16 @@ Vue.use(VueRouter)
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/skills',
+    name: 'Skills',
+    component: Skills
+  },
+  {
+    path: '/projects',
+    name: 'Projects',
+    component: Projects
   },
   {
     path: '/about',
